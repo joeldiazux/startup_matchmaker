@@ -1,0 +1,285 @@
+/*box sizing*/
+*{
+    -webkit-box-sizing:border-box; Safari/Chrome, other WebKit
+-moz-box-sizing:border-box; Firefox, other Gecko
+box-sizing:border-box; Opera/IE 8+
+}
+
+/*clearfix*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+html { font-size: 100%; }
+/* sets the base size of the fonts, allowing us to set font size through rem units */
+
+body { font-size: 16px
+       font-size: 1rem
+       text-rendering: optimizeLegibility;
+
+}
+/* sets the base font size for the document, equivalent to 14 pixels in height; turns on kerning pairs and ligatures */
+
+.container {
+    width:860px;
+    margin:0 auto;/*centres your website*/
+    border: 1px grey solid;
+}
+
+header {
+    background-color:black;
+    height:150px;
+    border-bottom: 5px yellow solid;
+}
+
+.tagline {
+    background-color:lightgray;
+    text-align:center;
+    height: 100px;
+}
+
+.meetMatchBG {
+    background-image: url('images/coworking.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding:20px;
+}
+
+.meetMatch {
+    width:300px;
+    background: rgba(255, 255, 255, 0.8);
+    padding:50px;
+    float:right;
+    display:inline-block;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+/*body font size is naturally 16px or 100%*/
+
+h1   {
+      font-size: 48px; /* for old browsers */
+      font-size: 3rem;
+      line-height: 48px; 3rem;
+      line-height: 3rem;
+      margin-bottom: 24px;
+      margin-bottom: 1.5rem;
+      font-family: 'Merriweather', serif;
+      color:yellow;
+      padding:20px 0 0 20px;
+}
+
+h2   {
+    font-size: 36px; /* for old browsers */
+    font-size:  2.25rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    padding: 40px 0 0 0;
+}
+
+h3  {
+    font-size: 24px; /* for old browsers */
+    font-size:  1.6rem;
+    line-height: 16px;
+    line-height: 1rem;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+h4  {
+    font-size: 22px; /* for old browsers */
+    font-size:  1.375rem;
+    line-height: 18px;
+    line-height: 1.125rem;
+    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+h5  {
+    font-size: 18px; /* for old browsers */
+    font-size:  1.125rem;
+    line-height: 14px;
+    line-height: 0.875rem;
+    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 16px; /* for old browsers */
+    font-size:  1.125rem;
+    line-height: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 14px;
+    margin-bottom: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.3rem; /* 16 / 16 */
+    line-height: 1.7rem;
+    margin-bottom: 14px;
+    margin-bottom: 1.5rem;
+}
+
+.subtitle {
+    font-size: 24px; /* for old browsers */
+    font-size:  1.5rem;
+}
+
+.action-button:active
+{
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.withBorder {
+    border-right: 1px solid lightgray;
+}
+
+
+/*Horizontal Navigation*/
+
+nav {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    padding-left:80px;
+    margin: 0 0 0 70px;
+}
+
+del {
+    text-decoration:line-through;
+    color:grey;
+    padding:0 0 0 7px;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+
+li {
+    list-style: none;
+    float: left;
+    margin: 0 10px 0 10px;
+    background: none;
+}
+
+a:link {
+    color:white;
+    text-decoration: none;
+    background: none;
+}
+
+a:visited {
+    color:white;
+}
+
+a:hover {
+    background: none;
+}
+
+a:focus {
+    border: 1px dotted #000;
+}
+
+a:active {
+    font-size: 1.5rem;
+}
+
+.renderCaps {
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+.articleParent {
+    margin: 40px 40px 80px 40px;
+
+}
+
+article {
+    width:250px;
+    float:left;
+    padding: 0 20px 0 20px;
+}
+
+footer {
+    padding: 40px;
+    background-color: black;
+    color:white;
+}
+
+.disclaimer {
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.5rem
+}
+
+
+/*Button styling*/
+
+a.button {
+    display:block;
+    margin:auto;
+    text-align:center;
+    border-radius:4px;
+    text-decoration:none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px; /* for old browsers */
+    font-size:  1.1rem;
+    font-weight: bold;
+    padding: 15px;
+    color:black;
+    text-transform:uppercase;
+}
+
+a.grey {
+    background-color:lightgrey;
+    border-bottom: 3px solid dimgrey;
+}
+
+a.yellow {
+    background-color:yellow;
+    border-bottom: 3px solid #D1B358;
+}
+
+
+p ::after {
+    border:thick solid gray;
+    background-color:red;
+}
+
+/*Designer & Developer Pages*/
+
+.headerPages {
+    background-color:black;
+    height:100px;
+    border-bottom: 5px yellow solid;
+}
+
+a:hover .overlay  {
+    background-color: white;
+
+
+}
